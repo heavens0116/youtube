@@ -79,7 +79,7 @@ header .icons .fa-search {
 
 /* VIdeo Info */
 
-.info {
+body .info {
   padding:var(--side-padding);
 }
 
@@ -178,4 +178,56 @@ header .icons .fa-search {
   font-size:var(--font-medium);
 }
 
+/* Up Next */
 
+.UpNext {
+  padding:0 var(--side-padding);
+}
+
+.UpNext > .title {
+  font-size: var(--font-medium);
+  color:var(--grey-dark-color);
+  margin-bottom:calc(var(--side-padding) / 2);
+}
+
+.UpNext .item {
+  display: flex;
+  margin-top:var(--side-padding);
+}
+
+.UpNext .item .img {
+  flex : 1 1 35;
+  margin-right: var(--side-padding);
+}
+
+.UpNext .item .img img {
+  width: 100%;
+}
+
+.UpNext .item .info {
+  flex : 1 1 60%;
+}
+
+.UpNext .item .moreBtn {
+  flex : 1 1 5%;
+}
+
+.UpNext .item .info {
+  display:flex;
+  flex-direction: column;
+}
+
+.UpNext .item .info .title {
+  font-size : var(--font-small);
+}
+
+.UpNext .item .info .name, 
+.UpNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
