@@ -40,6 +40,7 @@ button:focus {
   border:none;
   cursor:pointer;
   outline:none;
+  background-color: transparent;
 }
 
 header {
@@ -114,12 +115,12 @@ header .icons .fa-search {
 }
 
 /* Actions Buttons */
-.actions {
+.info .actions {
   display: flex;
   justify-content: space-around;
 }
 
-.actions button {
+.info .actions button {
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -127,12 +128,54 @@ header .icons .fa-search {
   color:var(--grey-dark-color);
 }
 
-.actions button i {
+.info .actions button i {
   margin: 0 auto;
   margin-bottom: calc((--side-padding)-2);
   font-size: 16px;
 }
 
-.actions button i.active {
+.info .actions button i.active {
   color:var(--blue-color);
 } 
+
+/* Chanel Description*/
+
+.info .chanel {
+  display: flex;
+  justify-content: space-between;
+  border-top:1px solid var(--grey-light-color);
+  border-bottom:1px solid var(--grey-light-color);
+}
+
+.info .chanel .metadata {
+  display:flex;
+  align-items: center;
+}
+
+.info .chanel .metadata img {
+  width: var(--avartar-size);
+  height: var(--avartar-size);
+  border-radius: 50%;
+}
+
+.info .chanel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .chanel .metadata .info .name {
+  font-size: var(--font-medium);
+}
+
+.info .chanel .metadata .info .subscribers {
+  font-size:var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.info .chanel .subscribe {
+  text-transform: uppercase;
+  color:var(--red-color);
+  font-size:var(--font-medium);
+}
+
+
